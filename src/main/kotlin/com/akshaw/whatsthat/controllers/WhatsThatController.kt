@@ -10,7 +10,7 @@ class WhatsThatController {
 
     @GetMapping("/")
     fun greet(): ResponseEntity<String> {
-        val randomNumber = (0..10000).random()
+        val randomNumber = (9999..20000).random()
         return ResponseEntity("Hello Ak: $randomNumber", HttpStatus.OK)
     }
 
